@@ -1,54 +1,53 @@
-import Link from "next/link";
+import TypingHeadline from './components/TypingHeadline';
+import ShowCards from './components/ShowCards';
 
-export default function Home() {
-  const message = process.env["MESSAGE"] || "Hello!";
+export default function HomePage() {
   return (
-    <main className="content">
-      <h1 className="heading">Next.js on Firebase App Hosting</h1>
-      <p>{message}</p>
+    <main className="max-w-7xl mx-auto py-16 px-8">
+      {/* Hero Section */}
+      <section className="text-center mb-16 mt-16 md:mt-32 lg:mt-64">
+        <TypingHeadline />
+        <div className="flex justify-center">
+        <h2
+            className="text-2xl mb-8"
+            style={{ color: 'var(--secondary-contrast)' }}
+          >
+            Fantasy Improv Troupe
+          </h2>
+        </div>
+        <p
+          className="text-xl leading-relaxed max-w-3xl mx-auto mb-32"
+          style={{ color: 'var(--secondary-contrast)' }}
+        >
+          Based in Vancouver, The Fool's Guild brings the magic of fantasy improv to life on stage. Check out our upcoming shows and join us for a night of adventure and shenanigans
+        </p>
+      </section>
 
-      <section className="features">
-        <article className="card">
-          <h2>Scalable, serverless backends</h2>
-          <p>
-            Dynamic content is served by{" "}
-            <Link
-              href="https://cloud.google.com/run/docs/overview/what-is-cloud-run"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Cloud Run
-            </Link>
-            , a fully managed container that scales up and down with demand.
-            Visit{" "}
-            <Link href="/ssr">
-              <code>/ssr</code>
-            </Link>{" "}
-            and{" "}
-            <Link href="/ssr/streaming">
-              <code>/ssr/streaming</code>
-            </Link>{" "}
-            to see the server in action.
-          </p>
-        </article>
-        <article className="card">
-          <h2>Global CDN</h2>
-          <p>
-            Cached content is served by{" "}
-            <Link
-              href="https://cloud.google.com/cdn/docs/overview"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Google Cloud CDN
-            </Link>
-            , a fast and secure way to host cached content globally. Visit
-            <Link href="/ssg">
-              {" "}
-              <code>/ssg</code>
-            </Link>{" "}
-          </p>
-        </article>
+      {/* Show Cards Section */}
+      <section className="mb-16">
+        <h2 className="text-4xl font-thin mb-8 text-center">Upcoming Shows</h2>
+        <ShowCards
+          shows={[
+            {
+              imageUrl: '/temp_img.webp',
+              title: 'Crits and Bits',
+              description: 'A Fantasy Themed Improv Show',
+              linkUrl: 'https://www.showpass.com/crits-and-bits/',
+            },
+            {
+              imageUrl: '/temp_img.webp',
+              title: 'Heros With No Plan',
+              description: 'An improvised D&D live play experience',
+              linkUrl: 'https://www.showpass.com/heroes-with-no-plan/',
+            },
+            {
+              imageUrl: '/temp_img.webp',
+              title: 'Show 3: The Grand Finale',
+              description: 'A spectacular conclusion to our season.',
+              linkUrl: 'https://www.showpass.com/',
+            },
+          ]}
+        />
       </section>
     </main>
   );
