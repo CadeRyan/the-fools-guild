@@ -4,8 +4,8 @@ import "./globals.css";
 import { Header, DotAnimation } from "./components";
 
 export const metadata: Metadata = {
-  title: "Koduu | Software Development Agency",
-  description: "We help people and businesses bring their ideas to life through innovative software solutions.",
+  title: "The Fool's Guild",
+  description: "A improv troupe based in Vancouver, BC",
 };
 
 export default function RootLayout({
