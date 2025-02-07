@@ -1,12 +1,27 @@
 "use client";
 
+"use client";
+
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 
 import { Instagram, Ticket, Mail } from "lucide-react";
 
 export function Header() {
   const pathname = usePathname();
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 550);
+    };
+
+    handleResize(); // Check initial size
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <header className="fixed top-0 left-0 right-0 p-4 backdrop-blur-sm bg-dark-blue/70 border-b border-dark-blue-2/30 z-50">
@@ -17,15 +32,19 @@ export function Header() {
         >
           The Fool's Guild
         </Link>
-        <nav className="flex gap-4">
-          <Link
-            href="/about"
-            className={`no-underline text-base px-4 py-2 rounded-lg transition-colors duration-200 hover:bg-light-teal/5 border border-transparent hover:border-light-teal/10 hover:shadow-lg ${
-              pathname === "/about" ? "bg-light-teal/5 border-light-teal/10 shadow-lg" : ""
-            }`}
-          >
-            About
-          </Link>
+        <nav className={`flex ${isMobile ? "gap-2" : "gap-4"}`}>
+          {!isMobile && (
+            <Link
+              href="/about"
+              className={`no-underline text-base px-4 py-2 rounded-lg transition-colors duration-200 hover:bg-light-teal/5 border border-transparent hover:border-light-teal/10 hover:shadow-lg ${
+                pathname === "/about"
+                  ? "bg-light-teal/5 border-light-teal/10 shadow-lg"
+                  : ""
+              }`}
+            >
+              About
+            </Link>
+          )}
           <Link
             href="https://www.instagram.com/fools.guild/"
             target="_blank"

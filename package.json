@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@mantine/core": "^7.16.2",
     "@phosphor-icons/react": "github:phosphor-icons/react",
     "@types/dat.gui": "^0.7.13",
     "@types/three": "^0.173.0",
