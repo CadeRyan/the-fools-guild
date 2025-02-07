@@ -30,7 +30,7 @@ export function Header() {
           href="/"
           className="font-mono text-2xl no-underline text-light-teal hover:text-orange transition-colors duration-200"
         >
-          The Fool's Guild
+          The Fool&apos;s Guild
         </Link>
         <nav className={`flex ${isMobile ? "gap-2" : "gap-4"}`}>
           {!isMobile && (

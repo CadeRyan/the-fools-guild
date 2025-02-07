@@ -19,7 +19,7 @@ export default function HomePage() {
           className="text-xl leading-relaxed max-w-3xl mx-auto mb-32"
           style={{ color: 'var(--secondary-contrast)' }}
         >
-          Based in Vancouver, The Fool's Guild brings the magic of fantasy improv to life on stage. Check out our upcoming shows and join us for a night of adventure and shenanigans
+          Based in Vancouver, The Fool&apos;s Guild brings the magic of fantasy improv to life on stage. Check out our upcoming shows and join us for a night of adventure and shenanigans
         </p>
       </section>
 
