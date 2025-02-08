@@ -36,9 +36,9 @@ export function Header() {
           {!isMobile && (
             <Link
               href="/about"
-              className={`no-underline text-base px-4 py-2 rounded-lg transition-colors duration-200 hover:bg-light-teal/5 border border-transparent hover:border-light-teal/10 hover:shadow-lg ${
+              className={`no-underline text-base px-4 py-2 rounded-lg transition-colors duration-200 hover:bg-light-teal/5 border border-transparent hover:border-light-teal/60 hover:shadow-lg hover:shadow-light-teal/20 ${
                 pathname === "/about"
-                  ? "bg-light-teal/5 border-light-teal/10 shadow-lg"
+                  ? "bg-light-teal/5 border-light-teal/10 shadow-lg border-light-teal/60 shadow-lg shadow-light-teal/20"
                   : ""
               }`}
             >
@@ -49,7 +49,7 @@ export function Header() {
             href="https://www.instagram.com/fools.guild/"
             target="_blank"
             aria-label="Instagram"
-            className="flex items-center px-2 py-2 rounded-lg transition-colors duration-200 hover:bg-light-teal/5 border border-transparent hover:border-light-teal/10 hover:shadow-lg"
+            className="flex items-center px-2 py-2 rounded-lg transition-colors duration-200 hover:bg-light-teal/5 border border-transparent hover:border-light-teal/60 hover:shadow-lg hover:shadow-light-teal/20"
           >
             <Instagram size={24} />
           </Link>
@@ -57,14 +57,18 @@ export function Header() {
             href="https://www.showpass.com/o/the-fools-guild/"
             target="_blank"
             aria-label="Showpass"
-            className="flex items-center px-2 py-2 rounded-lg transition-colors duration-200 hover:bg-light-teal/5 border border-transparent hover:border-light-teal/10 hover:shadow-lg"
+            className="flex items-center px-2 py-2 rounded-lg transition-colors duration-200 hover:bg-light-teal/5 border border-transparent hover:border-light-teal/60 hover:shadow-lg hover:shadow-light-teal/20"
           >
             <Ticket size={24} />
           </Link>
           <Link
             href="/contact"
             aria-label="Contact"
-            className="flex items-center px-2 py-2 rounded-lg transition-colors duration-200 hover:bg-light-teal/5 border border-transparent hover:border-light-teal/10 hover:shadow-lg"
+            className={`flex items-center px-2 py-2 rounded-lg transition-colors duration-200 hover:bg-light-teal/5 border border-transparent hover:border-light-teal/60 hover:shadow-lg hover:shadow-light-teal/20 ${
+              pathname === "/contact"
+                ? "bg-light-teal/5 border-light-teal/10 shadow-lg border-light-teal/60 shadow-lg shadow-light-teal/20"
+                : ""
+            }`}
           >
             <Mail size={24} />
           </Link>
