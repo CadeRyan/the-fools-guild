@@ -7,6 +7,7 @@ interface ShowCardProps {
     title: string;
     description: string;
     linkUrl: string;
+    date: string;
   }[];
 }
 
@@ -20,6 +21,7 @@ const ShowCards: React.FC<ShowCardProps> = ({ shows }) => {
           target="_blank"
           rel="noopener noreferrer"
           className="p-6 rounded-lg backdrop-blur-xxs bg-light-teal/5 border border-light-teal/30 shadow-lg hover:shadow-xl hover:border-light-teal/60 hover:shadow-light-teal/20 transition-all duration-300 motion-preset-rebound-up motion-delay-300 hover:scale-[1.1]">
+                  <div className="mb-2 text-white/70 text-center">{show.date}</div>
                   <div className="overflow-hidden rounded-md mb-4 relative" style={{ height: '192px' }}>
                     <Image
                       src={show.imageUrl}

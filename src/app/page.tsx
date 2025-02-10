@@ -36,6 +36,7 @@ export default function HomePage() {
               title: 'Crits and Bits',
               description: 'A Fantasy Themed Improv Show',
               linkUrl: 'https://www.showpass.com/crits-and-bits/',
+              date: 'Feb 22, 2025',
             },
             // {
             //   imageUrl: '/temp_img.webp',
