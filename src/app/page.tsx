@@ -1,5 +1,6 @@
 import TypingHeadline from './components/TypingHeadline';
 import ShowCards from './components/ShowCards';
+import EmailInput from './components/EmailInput';
 
 export default function HomePage() {
   return (
@@ -16,15 +17,17 @@ export default function HomePage() {
           </h2>
         </div>
         <p
-          className="text-xl leading-relaxed max-w-3xl mx-auto mb-32"
+          className="text-xl leading-relaxed max-w-3xl mx-auto mb-16"
           style={{ color: 'var(--secondary-contrast)' }}
         >
           Based in Vancouver, The Fool&apos;s Guild brings the magic of fantasy improv to life on stage. Check out our upcoming shows and join us for a night of adventure and shenanigans
         </p>
       </section>
 
-      {/* Show Cards Section */}
       <section className="mb-16">
+        <div className="mx-auto w-full max-w-[400px]">
+          <EmailInput />
+        </div>
         <h2 className="text-4xl font-thin mb-8 text-center">Upcoming Shows</h2>
         <ShowCards
           shows={[
@@ -34,18 +37,18 @@ export default function HomePage() {
               description: 'A Fantasy Themed Improv Show',
               linkUrl: 'https://www.showpass.com/crits-and-bits/',
             },
-            {
-              imageUrl: '/temp_img.webp',
-              title: 'Heros With No Plan',
-              description: 'An improvised D&D live play experience',
-              linkUrl: 'https://www.showpass.com/heroes-with-no-plan/',
-            },
-            {
-              imageUrl: '/temp_img.webp',
-              title: 'Show 3: The Grand Finale',
-              description: 'A spectacular conclusion to our season.',
-              linkUrl: 'https://www.showpass.com/',
-            },
+            // {
+            //   imageUrl: '/temp_img.webp',
+            //   title: 'Heros With No Plan',
+            //   description: 'An improvised D&D live play experience',
+            //   linkUrl: 'https://www.showpass.com/heroes-with-no-plan/',
+            // },
+            // {
+            //   imageUrl: '/temp_img.webp',
+            //   title: 'Show 3: The Grand Finale',
+            //   description: 'A spectacular conclusion to our season.',
+            //   linkUrl: 'https://www.showpass.com/',
+            // },
           ]}
         />
       </section>
