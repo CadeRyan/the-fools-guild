@@ -10,9 +10,10 @@
 
 .dot {
   position: absolute;
-  width: 1px;
-  height: 1px;
-  background-color: white;
+  width: 2px;
+  height: 2px;
+  background-color: yellow;
+  box-shadow: 0 0 5px yellow, 0 0 10px yellow, 0 0 15px yellow;
   opacity: 0;
 }
 
@@ -41,32 +42,46 @@
     transform: translate(0, 0);
     opacity: 0;
   }
+
   15% {
-    transform: translate(30px, 0); /* Right */
+    transform: translate(30px, 0);
+    /* Right */
     opacity: 0.8;
   }
+
   30% {
-    transform: translate(30px, 30px); /* Down */
+    transform: translate(30px, 30px);
+    /* Down */
     opacity: 1;
   }
+
   45% {
-    transform: translate(0, 30px); /* Left */
+    transform: translate(0, 30px);
+    /* Left */
     opacity: 0.8;
   }
+
   60% {
-    transform: translate(0, 60px); /* Down */
+    transform: translate(0, 60px);
+    /* Down */
     opacity: 1;
   }
+
   75% {
-    transform: translate(-30px, 60px); /* Left */
+    transform: translate(-30px, 60px);
+    /* Left */
     opacity: 0.8;
   }
+
   90% {
-    transform: translate(-30px, 90px); /* Down */
+    transform: translate(-30px, 90px);
+    /* Down */
     opacity: 1;
   }
+
   100% {
-    transform: translate(-60px, 90px); /* Left */
+    transform: translate(-60px, 90px);
+    /* Left */
     opacity: 0;
   }
 }
@@ -76,32 +91,46 @@
     transform: translate(0, 0);
     opacity: 0;
   }
+
   15% {
-    transform: translate(-30px, 0); /* Left */
+    transform: translate(-30px, 0);
+    /* Left */
     opacity: 0.8;
   }
+
   30% {
-    transform: translate(-30px, 30px); /* Down */
+    transform: translate(-30px, 30px);
+    /* Down */
     opacity: 1;
   }
+
   45% {
-    transform: translate(-60px, 30px); /* Left */
+    transform: translate(-60px, 30px);
+    /* Left */
     opacity: 0.8;
   }
+
   60% {
-    transform: translate(-60px, 60px); /* Down */
+    transform: translate(-60px, 60px);
+    /* Down */
     opacity: 1;
   }
+
   75% {
-    transform: translate(-30px, 60px); /* Right */
+    transform: translate(-30px, 60px);
+    /* Right */
     opacity: 0.8;
   }
+
   90% {
-    transform: translate(-30px, 90px); /* Down */
+    transform: translate(-30px, 90px);
+    /* Down */
     opacity: 0.8;
   }
+
   100% {
-    transform: translate(0, 90px); /* Right */
+    transform: translate(0, 90px);
+    /* Right */
     opacity: 0;
   }
 }
@@ -111,32 +140,46 @@
     transform: translate(0, 0);
     opacity: 0;
   }
+
   10% {
-    transform: translate(30px, 0); /* Right */
+    transform: translate(30px, 0);
+    /* Right */
     opacity: 0.8;
   }
+
   25% {
-    transform: translate(30px, -30px); /* Up */
+    transform: translate(30px, -30px);
+    /* Up */
     opacity: 1;
   }
+
   40% {
-    transform: translate(60px, -30px); /* Right */
+    transform: translate(60px, -30px);
+    /* Right */
     opacity: 0.8;
   }
+
   55% {
-    transform: translate(60px, -60px); /* Up */
+    transform: translate(60px, -60px);
+    /* Up */
     opacity: 1;
   }
+
   70% {
-    transform: translate(30px, -60px); /* Left */
+    transform: translate(30px, -60px);
+    /* Left */
     opacity: 0.8;
   }
+
   85% {
-    transform: translate(30px, -90px); /* Up */
+    transform: translate(30px, -90px);
+    /* Up */
     opacity: 0.8;
   }
+
   100% {
-    transform: translate(60px, -90px); /* Right */
+    transform: translate(60px, -90px);
+    /* Right */
     opacity: 0;
   }
 }
@@ -146,32 +189,44 @@
     transform: translate(0, 0);
     opacity: 0;
   }
+
   5% {
     opacity: 0.8;
   }
+
   20% {
-    transform: translate(0, 30px); /* Down */
+    transform: translate(0, 30px);
+    /* Down */
     opacity: 1;
   }
+
   40% {
-    transform: translate(30px, 30px); /* Right */
+    transform: translate(30px, 30px);
+    /* Right */
     opacity: 0.8;
   }
+
   60% {
-    transform: translate(30px, 60px); /* Down */
+    transform: translate(30px, 60px);
+    /* Down */
     opacity: 1;
   }
+
   80% {
-    transform: translate(60px, 60px); /* Right */
+    transform: translate(60px, 60px);
+    /* Right */
     opacity: 0.8;
   }
+
   95% {
-    transform: translate(60px, 30px); /* Up */
+    transform: translate(60px, 30px);
+    /* Up */
     opacity: 0.8;
   }
+
   100% {
-    transform: translate(30px, 30px); /* Left */
+    transform: translate(30px, 30px);
+    /* Left */
     opacity: 0;
   }
 }
-

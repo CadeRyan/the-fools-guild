@@ -38,7 +38,7 @@ const EmailInput: React.FC = () => {
   return (
     <div className="flex justify-center w-full max-w-[400px]">
       <form onSubmit={handleSubmit} className="mb-16 w-full mx-auto">
-        <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+        <label htmlFor="email" className="block text-sm font-medium">
           Subscribe to our newsletter:
         </label>
         <div className="mt-1 flex rounded-md shadow-sm">
