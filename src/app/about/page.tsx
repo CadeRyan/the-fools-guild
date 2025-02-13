@@ -19,7 +19,7 @@ export default function AboutPage() {
           <div className="text-center">
             <div className="relative h-48 w-48 mx-auto mb-4 rounded-full overflow-hidden motion-preset-rebound-up motion-delay-300">
               <Image
-                src="/temp_img.webp"
+                src="/quinn.jpeg"
                 alt="Quinn Langton"
                 layout="fill"
                 objectFit="cover"
@@ -31,7 +31,7 @@ export default function AboutPage() {
           <div className="text-center">
             <div className="relative h-48 w-48 mx-auto mb-4 rounded-full overflow-hidden motion-preset-rebound-up motion-delay-400">
               <Image
-                src="/temp_img.webp"
+                src="/cade.png"
                 alt="Cade Ryan"
                 layout="fill"
                 objectFit="cover"

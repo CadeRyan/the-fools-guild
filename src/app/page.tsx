@@ -6,7 +6,7 @@ export default function HomePage() {
   return (
     <main className="max-w-7xl mx-auto py-16 px-8">
       {/* Hero Section */}
-      <section className="text-center mb-16 mt-16 md:mt-32 lg:mt-64">
+      <section className="text-center mb-16 mt-16 md:mt-32 lg:mt-48">
         <TypingHeadline />
         <div className="flex justify-center">
         <h2
@@ -32,7 +32,7 @@ export default function HomePage() {
         <ShowCards
           shows={[
             {
-              imageUrl: '/temp_img.webp',
+              imageUrl: '/critsandbits.png',
               title: 'Crits and Bits',
               description: 'A Fantasy Themed Improv Show',
               linkUrl: 'https://www.showpass.com/crits-and-bits/',
