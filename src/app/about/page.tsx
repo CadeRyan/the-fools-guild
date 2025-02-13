@@ -15,7 +15,7 @@ export default function AboutPage() {
 
       {/* Our Team */}
       <section className="mb-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 md:justify-items-center gap-8">
+        <div className="grid grid-cols-1 pb-4 md:grid-cols-3 md:justify-items-center gap-8">
           <div className="text-center">
             <div className="relative h-48 w-48 mx-auto mb-4 rounded-full overflow-hidden motion-preset-rebound-up motion-delay-300">
               <Image
@@ -27,6 +27,18 @@ export default function AboutPage() {
             </div>
             <h3 className="text-2xl">Quinn Langton</h3>
             <p className="text-gray-700">Jester in Residence</p>
+          </div>
+          <div className="text-center">
+            <div className="relative h-48 w-48 mx-auto mb-4 rounded-full overflow-hidden motion-preset-rebound-up motion-delay-300">
+              <Image
+                src="/ivy.jpeg"
+                alt="Ivy Padmos"
+                layout="fill"
+                objectFit="cover"
+              />
+            </div>
+            <h3 className="text-2xl">Ivy Padmos</h3>
+            <p className="text-gray-700">Distressing Damsel</p>
           </div>
           <div className="text-center">
             <div className="relative h-48 w-48 mx-auto mb-4 rounded-full overflow-hidden motion-preset-rebound-up motion-delay-400">
