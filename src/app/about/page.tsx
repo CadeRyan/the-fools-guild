@@ -5,9 +5,9 @@ export default function AboutPage() {
     <main className="max-w-7xl mx-auto pt-48 pb-12 px-8">
       <header className="text-center mb-12">
         {/* Updated h1 styling to match /shows page */}
-        <h1 className="text-3xl md:text-5xl font-klein uppercase font-bold text-light-teal mb-4">About The Fool's Guild</h1>
+        <h1 className="text-3xl md:text-5xl font-klein uppercase font-bold text-light-teal mb-4">About The Fool&apos;s Guild</h1>
         <h2 className="text-2xl font-thin" style={{color: "var(--secondary-contrast)"}}>
-          We're just a bunch of fools
+          We&apos;re just a bunch of fools
         </h2>
       </header>
       <p className="text-xl leading-relaxed max-w-3xl mx-auto text-center mb-24" style={{color: "var(--secondary-contrast)"}}>
