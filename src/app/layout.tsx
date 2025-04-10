@@ -19,7 +19,8 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600;700&display=swap"
           rel="stylesheet"
         />
-        <link rel="icon" href="/KoduuLogo.svg" type="image/svg+xml" />
+        {/* Updated favicon link */}
+        <link rel="icon" href="/Fool_Logo.png" />
       </head>
       <body>
         <DotAnimation />
