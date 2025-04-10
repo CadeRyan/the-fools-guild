@@ -5,7 +5,7 @@ export default function ContactPage() {
         {/* Updated h1 styling */}
         <h1 className="text-3xl md:text-5xl font-klein uppercase font-bold text-light-teal mb-4">Contact Us</h1>
         <h2 className="text-2xl font-thin" style={{ color: 'var(--secondary-contrast)' }}>
-          We don't bite, promise!
+          We don&apos;t bite, promise!
         </h2>
       </header>
       <p className="text-xl leading-relaxed max-w-3xl mx-auto text-center mb-24" style={{ color: 'var(--secondary-contrast)' }}>

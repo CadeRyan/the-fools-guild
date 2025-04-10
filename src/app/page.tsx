@@ -8,7 +8,7 @@ export default function HomePage() {
       <section className="text-center mb-16 mt-16 md:mt-32 lg:mt-48">
         {/* Replaced TypingHeadline with static Klein font heading */}
         <h1 className="text-5xl md:text-7xl font-klein uppercase font-bold text-light-teal mb-4">
-          The Fool's Guild
+          The Fool&apos;s Guild
         </h1>
         <div className="flex justify-center">
         <h2

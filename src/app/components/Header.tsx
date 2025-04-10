@@ -64,7 +64,7 @@ export function Header() {
                 className="transition-transform duration-200 group-hover:scale-110"
               />
               <span className="font-klein uppercase text-xl font-bold text-light-teal group-hover:text-orange transition-colors duration-200 no-underline">
-                The Fool's Guild
+                The Fool&apos;s Guild
               </span>
             </Link>
             <nav className="flex items-center gap-2">
@@ -95,7 +95,7 @@ export function Header() {
           // Using Klein Bold, uppercase, light-teal text, orange hover
           className="font-klein uppercase text-lg font-bold text-light-teal hover:text-orange transition-colors duration-200 no-underline"
         >
-          The Fool's Guild
+          The Fool&apos;s Guild
         </Link>
         <button
           onClick={toggleMobileMenu}
