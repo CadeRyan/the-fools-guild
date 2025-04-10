@@ -14,6 +14,10 @@ module.exports = {
         'light-teal': '#93B1A6',
         'orange': '#ef8354',
       },
+      fontFamily: {
+        klein: ['Klein', 'sans-serif'], // Added Klein font
+        mono: ['"Geist Mono"', 'monospace'], // Keep Geist Mono as 'mono'
+      },
       blur: {
         xxs: '1px',
         xs: '2px',

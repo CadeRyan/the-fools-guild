@@ -1,3 +1,131 @@
+/* Klein Font Definitions */
+@font-face {
+  font-family: 'Klein';
+  src: url('/fonts/klein/Klein-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Klein';
+  src: url('/fonts/klein/Klein-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Klein';
+  src: url('/fonts/klein/Klein-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Klein';
+  src: url('/fonts/klein/Klein-ThinItalic.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Klein';
+  src: url('/fonts/klein/Klein-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Klein';
+  src: url('/fonts/klein/Klein-ExtraLightItalic.ttf') format('truetype');
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Klein';
+  src: url('/fonts/klein/Klein-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Klein';
+  src: url('/fonts/klein/Klein-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Klein';
+  src: url('/fonts/klein/Klein-Book.ttf') format('truetype');
+  font-weight: 350; /* Book is often between Light and Regular */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Klein';
+  src: url('/fonts/klein/Klein-BookItalic.ttf') format('truetype');
+  font-weight: 350;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Klein';
+  src: url('/fonts/klein/Klein-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Klein';
+  src: url('/fonts/klein/Klein-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Klein';
+  src: url('/fonts/klein/Klein-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Klein';
+  src: url('/fonts/klein/Klein-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Klein';
+  src: url('/fonts/klein/Klein-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Klein';
+  src: url('/fonts/klein/Klein-ExtraBoldItalic.ttf') format('truetype');
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Klein';
+  src: url('/fonts/klein/Klein-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Klein';
+  src: url('/fonts/klein/Klein-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+}
+/* End Klein Font Definitions */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

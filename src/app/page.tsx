@@ -1,5 +1,4 @@
-import TypingHeadline from './components/TypingHeadline';
-import ShowCards from './components/ShowCards';
+import DynamicShowList from './components/DynamicShowList'; // Import the new dynamic list
 import EmailInput from './components/EmailInput';
 
 export default function HomePage() {
@@ -7,7 +6,10 @@ export default function HomePage() {
     <main className="max-w-7xl mx-auto py-16 px-8">
       {/* Hero Section */}
       <section className="text-center mb-16 mt-16 md:mt-32 lg:mt-48">
-        <TypingHeadline />
+        {/* Replaced TypingHeadline with static Klein font heading */}
+        <h1 className="text-5xl md:text-7xl font-klein uppercase font-bold text-light-teal mb-4">
+          The Fool's Guild
+        </h1>
         <div className="flex justify-center">
         <h2
             className="text-2xl mb-8"
@@ -28,30 +30,10 @@ export default function HomePage() {
         <div className="mx-auto w-full max-w-[400px]">
           <EmailInput />
         </div>
-        <h2 className="text-4xl font-thin mb-8 text-center">Upcoming Shows</h2>
-        <ShowCards
-          shows={[
-            {
-              imageUrl: '/critsandbits.png',
-              title: 'Crits and Bits',
-              description: 'A Fantasy Themed Improv Show',
-              linkUrl: 'https://www.showpass.com/crits-and-bits/',
-              date: 'Feb 22, 2025',
-            },
-            // {
-            //   imageUrl: '/temp_img.webp',
-            //   title: 'Heros With No Plan',
-            //   description: 'An improvised D&D live play experience',
-            //   linkUrl: 'https://www.showpass.com/heroes-with-no-plan/',
-            // },
-            // {
-            //   imageUrl: '/temp_img.webp',
-            //   title: 'Show 3: The Grand Finale',
-            //   description: 'A spectacular conclusion to our season.',
-            //   linkUrl: 'https://www.showpass.com/',
-            // },
-          ]}
-        />
+        {/* Using Klein font, uppercase, light-teal text */}
+        <h2 className="text-4xl font-klein uppercase font-bold text-light-teal mb-8 text-center">Upcoming Shows</h2>
+        {/* Replaced ShowCards with DynamicShowList */}
+        <DynamicShowList />
       </section>
     </main>
   );
