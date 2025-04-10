@@ -14,7 +14,7 @@ export default function ContactPage() {
       <div className="text-center">
         <h2>Contact Information</h2>
         <p style={{ color: 'var(--secondary-contrast)' }}>Name: Quinn Langton</p>
-        <p style={{ color: 'var(--secondary-contrast)' }}>Email: contact@foolsguild.ca</p>
+        <p style={{ color: 'var(--secondary-contrast)' }}>Email: thefoolsguildca@gmail.com</p>
       </div>
     </main>
   );
